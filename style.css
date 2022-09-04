@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Passion One';
+    src: url(fontes/passion-one-bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Sriracha';
+    src: url(fontes/Sriracha-Regular.ttf);
+}
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+* > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html, body {
+    background-color: darkgray;
+    height: 100vh;
+    background-image: url('imagens/background001.jpg'), url('imagens/background002.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+    background-attachment: fixed;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font2);
+    padding-top: 50px;
+    font-size: 10vw;
+    font-variant: small-caps ;/* text-transform: uppercase/lowcase */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 4.5vw;/* Responsividade */
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.total {
+    background-color: white;
+    color: black;
+}
+
+section.foto {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.192);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    background-position: right center;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+section.foto > p {
+    display: inline-block; /* Cx adptada ao tamanho do conteúdo */
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+}
+    
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;    
+}
+
